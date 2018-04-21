@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+   background-size:cover;
+
+}
+.container {
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+       <h1>Welcome To Our <%= title %></h1>
+	 
+	 <div class="container">
+      <div class="row">
+        <div class="col-md-offset-18 col-md-18">
+
+	   <form action="/read_nurse" method="post">
+ 
+
+  
+
+   <div class="input-group mb-3">
+   <div class="input-group-prepend">
+    <label class="input-group-text" for="Email">Username</label>
+   </div>
+  
+    <input type="email" class="form-control" size="30" id="Email" name="email" placeholder="Enter your email" required >
+</div>
+
+ <div class="input-group mb-3">
+ <div class="input-group-prepend">
+  <label class="input-group-text" for="password">password</label>
+  </div>
+    <input type="password" class="form-control" size="30" id="password" name="password" placeholder="Enter your password" required >
+</div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+

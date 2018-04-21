@@ -1,0 +1,1 @@
+C:\Users\pc\Desktop\emerging Technology\lab2\New folder\MongoDbCRUDTest\MongoDbCRUDTest\obj\Debug\MongoDbCRUDTest.njsprojResolveAssemblyReference.cache

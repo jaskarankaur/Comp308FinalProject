@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
+
+</head>
+
+  <body>
+
+
+    
+    
+     <h1><%= title %></h1>
+
+
+    <div class="jumbotron text-xs-center">
+      
+	   <table class="table table-bordered table-striped table-hover">
+
+
+            <tr>
+			 <th class="text-center">patient</th>
+              <th class="text-center">bodyTemperature</th>
+              <th class="text-center">heartRate</th>
+             <th class="text-center">bloodPressure</th>
+			 <th class="text-center">respiratoryRate</th>
+            </tr>
+            <!-- Template Row -->
+            <% for (let count = 0; count < user.length; count++) { %>
+            <tr>
+             
+              <td class="text-center"> <%= user[count].patient %> </td>
+			  
+                 <td class="text-center"> <%= user[count].bodyTemperature %> </td>
+				  <td class="text-center"> <%= user[count].bodyTemperature %> </td>
+				   <td class="text-center"> <%= user[count].heartRate %> </td>
+				    <td class="text-center"> <%= user[count].bloodPressure %> </td>
+					 <td class="text-center"> <%= user[count].respiratoryRate %> </td>
+              
+             
+            </tr>
+            <% } %>
+          </table>
+        
+      
+        </div>
+      </div>
+    </div>
+        
+        
+  
+
+
+
+        <p class="lead">
+          <a class="btn btn-primary btn-sm" href="/" role="button">Go to main page</a>
+        </p>
+
+		  
+      </div>
+  </body>
+</html>

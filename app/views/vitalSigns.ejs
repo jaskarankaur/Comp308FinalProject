@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+   background-size:cover;
+
+}
+.container {
+    border-radius: 5px;
+    background-color: skyblue;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+<div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-md-auto">
+       <h1>Welcome To Our <%= title %></h1>
+	 
+	 <div class="container">
+      <div class="row">
+        <div class="col-md-offset-18 col-md-18">
+
+	   <form action="/display/vitalsigns" method="post">
+ 
+  
+   
+   <div class="input-group mb-3">
+   <div class="input-group-prepend">
+    <label class="input-group-text" for="bodyTemperature">Body Temperature</label>
+   </div>
+  
+    <input type="text" class="form-control" size="30" id="bodyTemperature" name="bodyTemperature" placeholder="Body Temperature" required >
+</div>
+
+
+    <div class="input-group mb-3">
+   <div class="input-group-prepend">
+    <label class="input-group-text" for="heartRate">Heart Rate</label>
+   </div>
+  
+    <input type="text" class="form-control" size="30" id="heartRate" name="heartRate" placeholder="Enter Heart Rate" required >
+</div>
+
+    <div class="input-group mb-3">
+   <div class="input-group-prepend">
+    <label class="input-group-text" for="bloodPressure">Blood Pressure</label>
+   </div>
+  
+    <input type="text" class="form-control" size="30" id="bloodPressure" name="bloodPressure" placeholder="Enter blood Pressure" required >
+</div>
+  
+
+   <div class="input-group mb-3">
+   <div class="input-group-prepend">
+    <label class="input-group-text" for="patient">Patient Name</label>
+   </div>
+  <select class="selectpicker" data-style="btn-info" name="patient">
+        <optgroup label="Select Table">
+
+
+            <option value="">Select PATIENT Name</option>
+            <% users.forEach(function (user) { %>
+            <option value="<%= user.firstName %>"><%= user.firstName %></option>
+            <% }) %>
+        </optgroup>
+    </select></div>
+
+ <div class="input-group mb-3">
+ <div class="input-group-prepend">
+  <label class="input-group-text" for="respiratoryRate">Respiratory Rate</label>
+  </div>
+    <input type="text" class="form-control" size="30" id="respiratoryRate" name="respiratoryRate" placeholder="Enter the Respiratory Rate" required >
+</div>
+
+
+
+
+
+
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+

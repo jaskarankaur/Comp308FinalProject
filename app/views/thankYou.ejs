@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <h1><%= title %></h1>
+
+</head>
+
+  <body>
+
+
+    
+    
+    
+
+
+    <div class="jumbotron text-xs-center">
+      <h1 class="display-3">Thank You!</h1>
+      <hr>
+
+        
+          
+ <div class="container">
+      <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+         <br />
+          <table class="table table-bordered table-striped table-hover">
+            <tr>
+              <th class="text-center">email</th>
+              <th class="text-center">comments</th>
+             
+            </tr>
+            <!-- Template Row -->
+            <% for (let count = 0; count < user.length; count++) { %>
+            <tr>
+             
+              <td class="text-center"> <%= user[count].email %> </td>
+			  
+                 <td class="text-center"> <%= user[count].content %> </td>
+               <td class="text-center">  </td>
+             
+            </tr>
+            <% } %>
+          </table>
+        </div>
+      </div>
+    </div>
+        
+        
+  
+
+
+
+        <p class="lead">
+          <a class="btn btn-primary btn-sm" href="https://bootstrapcreative.com/" role="button">Log Out</a>
+        </p>
+
+		  
+      </div>
+  </body>
+</html>
